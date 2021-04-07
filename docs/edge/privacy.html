@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>HTTP Downloader - Privacy Policy</title>
+<style>
+div { padding: 4px; }
+</style>
+</head>
+<body style="width:640px;">
+<h1>HTTP Downloader - Privacy Policy</h1>
+<div>The HTTP Downloader extension works by sending URL(s) to the HTTP Downloader program. The user either selects a URL(s) to download from the extension's context menu, or allows the extension to override the browser's download manager. The program has a built in web server that can accept POST requests that are constructed by the extension. The program only needs a URL to work, however, additional information such as POST data, user-agent, referer, and cookie values may be required to download from a URL successfully. Below are a list of permissions that allow the extension to retrieve the additional information.</div>
+<br/>
+<div>The following permissions are used by HTTP Downloader.
+<br/>
+<ul>
+<li>webRequest</li>
+<li>cookies</li>
+<li>storage</li>
+<li>downloads</li>
+</ul>
+</div>
+<div>The webRequest permission is used to gather POST data. If a download is initiated via a POST request, then the data payload is needed to facilitate a download with HTTP Downloader.</div>
+<div>The cookies permission is used to gather cookies associated with a download. The cookies that are gathered are limited to the domain of the URL that will be downloaded.</div>
+<div>The storage permission is used to save the extension's settings. Settings include the HTTP Downloader server that receives the download request and username and password information that the server may require.</div>
+<div>The downloads permission is used to intercept the browser's default download manager and get the URL being downloaded as well as the downloaded file's save directory. If the extension is set to override the browser's download manager, then it will cancel the download that's initiated and redirect it to the HTTP Downloader program.</div>
+<br/>
+<div>All of the information gathered above is optional and is not accessible to anyone but the user of the extension. The HTTP Downloader extension does not make any outbound connections except to the server specified in its options. By default, it connects to the localhost. Any change to the server option is done so at the user's own discretion and this privacy policy does not cover anything beyond the localhost.</div>
+<br/>
+<div>Questions, comments, suggestions: <a href="https://github.com/erickutcher/httpdownloader/">Project Page</a></div>
+<br/>
+<div>Effective: March 9, 2020</div>
+</body>
+</html>
